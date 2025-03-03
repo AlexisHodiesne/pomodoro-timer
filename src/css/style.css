@@ -33,9 +33,9 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
-  min-height: 90vh;
+  min-height: 50vh;
   font-family: var(--font);
   background-color: var(--color-dark-bg);
   color: var(--color-dark-text);
