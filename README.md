@@ -1,12 +1,5 @@
 # pomodoro-timer
-A minimal pomodoro timer created using HTML, CSS and JavaScript
-
-## Screenshots
-![Pomodoro app asking to choose a starting mode](./screenshots/starting-mode.png)
-
-![Pomodoro app in use in the pomodoro mode](./screenshots/pomodoro.png)
-
-![Settings modal to customise timings, font and accent color](./screenshots/settings-modal.png)
+A minimal pomodoro timer created using HTML, CSS and JavaScript.
 
 ## Features
 - Choose between pomodoro, short break and long break modes
@@ -17,9 +10,7 @@ A minimal pomodoro timer created using HTML, CSS and JavaScript
 ## Technologies
 - HTML5
 - CSS3
-- JavaScript (ES6)
+- JavaScript
 
 ## Inspiration
-This application is based on a [FrontEndMentor challenge](https://www.frontendmentor.io/challenges/pomodoro-app-KBFnycJ6G).
-
-The changes made were to reduce the number of additional interactions, putting the focus on work and productivity - while keeping a minimal interface.
+Forked from [mohammedyh](https://github.com/mohammedyh/pomodoro-timer) and modified for Notion integrations.
