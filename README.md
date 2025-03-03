@@ -1,16 +1,16 @@
 # pomodoro-timer
-A minimal pomodoro timer created using HTML, CSS and JavaScript.
+A lightweight and customizable Pomodoro timer built with HTML, CSS, and JavaScript, designed for focus and productivity.
 
-## Features
-- Choose between pomodoro, short break and long break modes
-- From selected mode, countdown until 0
-- Show timer progress in tab title
-- Play sound when timer finishes
+## ✨Features
+- Switch between modes
+- Live progress update in the tab title for easy tracking
+- Audio alert when the timer reaches zero
+- Optimized for Notion integrations
 
-## Technologies
-- HTML5
-- CSS3
-- JavaScript
+## 🛠 Technologies
+- HTML5 for structure
+- CSS3 for styling
+- JavaScript for interactivity
 
-## Inspiration
+## 🔗Inspiration
 Forked from [mohammedyh](https://github.com/mohammedyh/pomodoro-timer) and modified for Notion integrations.
