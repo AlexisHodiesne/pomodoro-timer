@@ -14,12 +14,20 @@ export function loadSettings() {
 
 export function applyTheme() {
   const observer = new MutationObserver(() => {
-    const isDarkMode = document.documentElement.style.backgroundColor === "rgb(28, 27, 34)";
+    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
     document.documentElement.setAttribute("data-theme", isDarkMode ? "dark" : "light");
   });
-  
+
   observer.observe(document.documentElement, { attributes: true, attributeFilter: ["style"] });
+
+  const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.setAttribute("data-theme", isDarkMode ? "dark" : "light");
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', (e) => {
+    document.documentElement.setAttribute("data-theme", e.matches ? "dark" : "light");
+  });
 }
+
 
 function populateSettingsForm(settings) {
   pomodoroTimeInput.value = settings.pomodoroTime / 60;

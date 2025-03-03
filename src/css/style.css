@@ -3,8 +3,8 @@
   --color-accent: rgb(235, 87, 87);
   --color-light-bg: #ffffff;
   --color-light-text: #000000;
-  --color-dark-bg: #1c1b22;
-  --color-dark-text: #ffffff;
+  --color-dark-bg: #181818;
+  --color-dark-text: #f3f3f3;
 }
 
 [data-theme="light"] {
@@ -37,8 +37,8 @@ body {
   align-items: center;
   min-height: 90vh;
   font-family: var(--font);
-  background-color: #1e2140;
-  color: #fff;
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
 }
 
 label {
@@ -68,7 +68,7 @@ main {
 .modes {
   font-size: 2rem;
   padding: 1.6rem 1rem;
-  background: #151932;
+  background: var(--color-dark-bg);
   border-radius: 10rem;
 }
 
@@ -85,7 +85,7 @@ main {
   padding: 0.5em 1em;
   border-radius: 50px;
   background-color: var(--color-accent);
-  color: #1c2244;
+  color: var(--color-dark-bg);
 }
 
 .pomodoro {
@@ -99,7 +99,7 @@ main {
   margin: 2.5rem 0;
   text-align: center;
   border-radius: 50%;
-  background: #151932;
+  /* background: var(--color-dark-bg); */
 }
 
 .pomodoro__time {
@@ -108,6 +108,7 @@ main {
   position: relative;
   z-index: 10;
 }
+
 @media screen and (max-width: 480px) {
   main {
     transform: scale(0.75);
