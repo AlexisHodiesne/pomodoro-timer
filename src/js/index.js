@@ -1,5 +1,8 @@
 import { setupEventListeners } from "./events.js";
-import { loadSettings } from "./settings.js";
+import { loadSettings, applyTheme } from "./settings.js";
 
-setupEventListeners();
-loadSettings();
+document.addEventListener("DOMContentLoaded", () => {
+  loadSettings();
+  setupEventListeners();
+  applyTheme();
+});
