@@ -14,11 +14,6 @@
   </head>
 
   <body>
-    <div class="modes">
-      <a class="mode" data-time="1500" data-pomodoro>Focus</a>
-      <a class="mode" data-time="300" data-short-break>Pause</a>
-    </div>
-
     <main>
       <div class="pomodoro">
         <svg class="progress-ring" width="220" height="220">
@@ -36,6 +31,13 @@
         </svg>
         <h1 class="pomodoro__time"></h1>
       </div>
+      
+      <div class="modes">
+        <a class="mode" id="start-session">Démarrer une session</a>
+        <a class="mode pause-session" id="pause-session" style="display:none;">Pause</a>
+        <a class="mode stop-session" id="stop-session" style="display:none;">Stopper</a>
+      </div>
+      
     </main>
 
     <audio src="src/assets/alarm-sound.mp3"></audio>
