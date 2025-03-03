@@ -27,7 +27,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 55%;
 }
 
 body {
@@ -58,33 +58,28 @@ label {
 }
 
 main {
-  width: 30.5rem;
-  height: 30.5rem;
+  width: 23rem;
+  height: 23rem;
   border-radius: 50%;
   text-align: center;
   position: relative;
 }
 
 .modes {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 1.6rem 1rem;
   background: #151932;
   border-radius: 10rem;
 }
 
 .mode {
-  margin: 0 10px;
+  margin: 0 0.8rem;
   text-decoration: none;
   font-weight: 400;
   color: var(--color-dark-text);
   cursor: pointer;
   transition: all 300ms ease-out;
 }
-
-[data-theme="light"] .mode {
-  background: rgba(0, 0, 0, 0.1);
-  color: var(--color-light-text);
-} 
 
 .mode.active {
   padding: 0.5em 1em;
@@ -105,7 +100,6 @@ main {
   text-align: center;
   border-radius: 50%;
   background: #151932;
-  box-shadow: 50px 50px 82px #0e1021, -50px -50px 82px #1c2244;
 }
 
 .pomodoro__time {
@@ -114,13 +108,12 @@ main {
   position: relative;
   z-index: 10;
 }
-
 @media screen and (max-width: 480px) {
   main {
-    transform: scale(0.85);
+    transform: scale(0.75);
   }
 
   .modes {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }

@@ -3,7 +3,7 @@ const sound = document.querySelector("audio");
 const circle = document.querySelector(".progress-ring__circle");
 
 let countdown;
-const RADIUS = 150;
+const RADIUS = 100;
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
 circle.style.strokeDasharray = CIRCUMFERENCE;
